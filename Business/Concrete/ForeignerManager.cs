@@ -8,23 +8,22 @@ using System.Threading.Tasks;
 
 namespace Business.Concrete
 {
-    //Çıplak Class Kalmasın
-    
-    public class PersonManager: IApplicantService
+    public class ForeignerManager : IApplicantService
     {
+        //Sonar Cube
         public void ApplyForMask(Person Person)
         {
-            
-                }
-        public List<Person> GetList()
-        {
-            return null;
+            throw new NotImplementedException();
         }
-        
+
         public bool CheckPerson(Person person)
         {
-            return true;
-        } 
+            throw new NotImplementedException();
+        }
 
+        public List<Person> GetList()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

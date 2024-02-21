@@ -23,7 +23,7 @@
             Console.WriteLine("Merhaba ");
         }
 
-        static int Topla(int sayi1, int sayi2=3)
+        static int Topla(int sayi1, int sayi2 = 3)
         {
             return sayi1 + sayi2;
         }
@@ -57,3 +57,33 @@
     }
 
 }
+
+
+
+// SOLID
+
+// S - Single Responsibility Principle (Tek Sorumluluk Prensibi)
+// O - Open/Closed Principle (Açık/Kapalı Prensibi)
+// L - Liskov Substitution Principle (Liskov'un Yerine Geçme Prensibi)
+// I - Interface Segregation Principle (Arayüz Ayrımı Prensibi)
+// D - Dependency Inversion Principle (Bağımlılıkların Ters Çevrilmesi Prensibi)
+
+// S - Single Responsibility Principle (Tek Sorumluluk Prensibi)
+// Bir sınıfın sadece bir sorumluluğu olmalıdır. Yani bir sınıfın sadece bir işi olmalıdır.
+//
+//
+// O - Open/Closed Principle (Açık/Kapalı Prensibi)
+// Yazılım varlıkları (class, modül, fonksiyon vb.) gelişime açık, değişime kapalı olmalıdır.
+//
+//
+// L - Liskov Substitution Principle (Liskov'un Yerine Geçme Prensibi)
+// Bir sınıf alt sınıfı ile yer değiştirdiğinde aynı davranışı sergilemelidir.
+//
+//
+// I - Interface Segregation Principle (Arayüz Ayrımı Prensibi)
+// Bir sınıfın ihtiyacı olmayan metotları içermemesi gerekmektedir.
+//
+//
+// D - Dependency Inversion Principle (Bağımlılıkların Ters Çevrilmesi Prensibi)
+// Yazılım varlıkları (class, modül, fonksiyon vb.) somut sınıflara değil, soyutlamalara bağımlı olmalıdır.
+
