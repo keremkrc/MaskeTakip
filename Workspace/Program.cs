@@ -1,18 +1,27 @@
-﻿namespace Workspace
+﻿using Business.Concrete;
+using Entities.Concrete;
+
+namespace Workspace
 {
     class Program
     {
 
         static void Main(string[] args)
         {
+
             // Degiskenler();
             Vatandas vatandas1 = new Vatandas();
+            Person person1 = new Person();
+            person1.FirstName = "Kerem";
+            person1.LastName = "Karaca";
+            person1.NationalIdentity = 123;
+            person1.DateofBirthYear = 2003;
 
-            SelamVer();
-            SelamVer();
-            SelamVer();
-            Topla(2);
-            Console.WriteLine(Topla(1));
+
+
+            PttManager pttManager = new PttManager(new PersonManager());
+
+            pttManager.GiveMask(person1);
 
             Console.ReadLine();
 

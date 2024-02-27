@@ -20,7 +20,10 @@ namespace Business.Concrete
         {
             if (_applicantService.CheckPerson(person))
             {
-                Console.WriteLine(person.FirstName + " için maske verildi");
+                Console.WriteLine(person.FirstName + " için maske verildi.");
+            }
+            else {
+                Console.WriteLine(person.FirstName + " için maske verilemedi.");
             }
         }
     }
